@@ -1,0 +1,204 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/montserrat-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../font/montserrat-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/montserrat-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/montserrat-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../font/montserrat-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../font/montserrat-v12-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+html, body, p, a{ 
+font-family: 'Montserrat';
+}
+#botList-head{
+    background: #fff;        
+    color: #585858;
+}
+h1{  height: 56px;
+    margin-bottom: 10px;
+border-bottom: 10px solid #163b90;
+}
+.container{
+    background: #ece6f6;
+}
+.msg {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 3px;
+}
+
+.msg div {
+    padding: 5px;
+    display: inline-block;
+    min-width: 150px;
+    max-width: 85%;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+#conversation>div {
+    position: relative;
+    margin: 35px 10px;
+}
+.content{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 1px 2px 10px #888
+}
+.userMsg  .content {
+    border-top-right-radius: 0px;
+        margin-right: 45px;
+        margin-left: 70px;
+}
+.avtar-img{
+    position: absolute;
+    top: -30px;    
+     right: 0px;
+    width: 45px; 
+    height: 45px;
+}
+.botMsg  .content {
+     margin-left: 42px;
+        margin-right: 70px;
+    color: #fff;
+    border-top-left-radius: 0px ;    
+}
+.botavtar-img{
+    position: absolute;
+        top: -30px;
+    left: 0;
+    width: 45px; 
+    height: 45px;
+}
+#sendBtn{    
+    cursor: pointer;
+        color: #163b90;
+        font-size: 25px !important;
+    padding: 10px 10px 1px 10px !important;
+    position: absolute;
+    right: 4px;
+    z-index: 99;
+    background: none;
+    border: none;
+    outline: none;
+    
+/*
+        border-radius: 18px;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    z-index: 999;
+*/
+}
+#stick{ 
+   content: " "; height: 1px;
+}
+.suggest{height: 56px;}
+#suggestionSelector {
+    overflow-x: auto;
+    padding: 2px 2px 4px;
+}
+
+input[type=text] {
+    font-weight: bold;
+}
+
+#suggestionSelector .badge {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+  margin: 3px 3px 6px;
+    font-weight: 600;
+    background-color: #fff;
+    color: #011e61;
+    border: 2px solid;
+}
+
+.badge {
+    margin-right: 5px
+}
+
+.chat-wrapper {
+    position: absolute;
+    width: 97%;
+    bottom: 10px;
+    overflow: auto;
+}
+.special{ }
+.ql-size-huge {
+        font-size: 260%;
+    font-weight: bold;
+}
+.ql-size-large {
+    font-size: 110%;
+}
+.ql-size-small {
+    font-size: 80%;
+}
+a, a.link {
+    color: #337ab7;
+    text-decoration: underline;
+    font-weight: 700;
+}
+.chat-img{  max-width: 100px;     }
+.form-start{
+    padding: 14px 30px 44px;
+    border: 3px solid #f3f3f3;
+    margin-top: 15px;
+}
+.form-head{
+    margin-top: -27px;
+    background: #ac92d0;
+    padding: 0 10px;
+}
+.submitrqst {
+    background: #fff;
+    color: #4e01b5;
+    font-weight: 700;
+    margin: 5px;
+    text-decoration: none;
+}
+blockquote{
+    border-left: 5px solid #664f86;
+    background: #947eb1;
+        margin-bottom: 0;
+}
+.list li{ margin-bottom: 1px;}
+.list a{
+    display: block;
+    padding: 7px 10px;
+    background: #947eb1;
+    text-decoration: none;
+}
+.list a:hover{ background: #dbd2e9; color:#6e5096;}
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #6e5096;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+.list a p{ margin-bottom: 0;}
+@media (min-width: 992px)
+{
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+}
+@media (max-width:768px){
+    .chat-wrapper {
+            width: 100%;
+    } 
+}

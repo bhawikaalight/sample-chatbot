@@ -1,0 +1,185 @@
+[{
+              "intent" : "BB_INTENT_THANKS",
+              "description" : "Base intent for thanking",
+              "suggestions" : [],
+              "utterances" : ["Great thanks", "Thank you", "Thanks"],
+              "type" : "plaintext",
+              "responses" : [{
+                           "content" : "<p>You're welcome!</p>"
+                     }, {
+                           "content" : "<p>No problem. Is there anything else that I may assist you with?</p>"
+                     }, {
+                           "content" : "<p>Oh sure! What's next?</p>"
+                     }
+              ]
+       }, {
+              "intent" : "BB_INTENT_GREET",
+              "description" : "Base intent for greeting",
+           "resources":"<p><span class=\"ql-size-large\">Okay this has some resources</span></p><p>Some are Normal</p><p>Some are <span class=\"ql-size-huge\">HUGE</span></p><p>It can be <strong>bold</strong> <em>italic</em> <u>underlined</u> or <s>striked</s></p><p><br></p><p>You can also add lists: </p><ol><li>One</li><li>Two</li></ol><p><br></p><ul><li>Ordered</li><li>Un-ordered anything</li></ul>",
+              "suggestions" : [],
+              "utterances" : ["Hi", "Hey", "Hello", "Hi there"],
+              "type" : "plaintext",
+              "responses" : [{
+                           "content" : "<p>Hello, how may I help you?</p>"
+                     }, {
+                           "content" : "<p>Hello there, I'm here to help you. Let's get started.</p>"
+                     }, {
+                           "content" : "<p>Hey! I'm here to help you with your queries. Let's get you some answers.</p>"
+                     }
+              ]
+       }, {
+              "intent" : "BB_PremierCo_TestBot_CardResponse",
+              "description" : "My car intent description",
+              "hasPII" : false,
+              "utterances" : ["go to URL", "link it", "show link"],
+              "type" : "card",
+              "subType" : "link",
+              "responses" : [{
+                           "content" : "<p>Go <strong>Google</strong></p>"
+                     }, {
+                           "content" : "<p>G<u>oogl</u>e</p>"
+                     }, {
+                           "content" : "<p><em>Open google.com</em></p>"
+                     }
+              ],
+              "URL" : "http://google.com",
+              "suggestions" : ["open image", "show image"]
+       }, {
+              "intent" : "BB_PremierCo_TestBot_AnotherCardIntent",
+              "description" : "Card intent 2",
+              "hasPII" : false,
+              "utterances" : ["picture", "open image", "show image"],
+              "type" : "card",
+              "subType" : "image",
+              "responses" : [{
+                           "content" : "<p>Here's the image</p>"
+                     }, {
+                           "content" : "<p><span class=\"ql-size-large\">Picture this</span></p>"
+                     }
+              ],
+              "URL" : "https://res-1.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1498741587/skezes92mzu1r1lyszpc.png",
+              "suggestions" : ["link it", "show link"]
+       }, {
+              "intent" : "BB_PremierCo_TestBot_multiSelFormIntent",
+              "description" : "Intent for a multiple select form",
+              "hasPII" : false,
+              "utterances" : ["personality check", "who am i", "multi form"],
+              "type" : "form",
+              "subType" : "multi",
+              "responses" : [{
+                           "content" : "<p><u>Alien</u></p>"
+                     }, {
+                           "content" : "<p><em>Awesome</em></p>"
+                     }, {
+                           "content" : "<p><strong>Superhero</strong></p>"
+                     }
+              ],
+              "FollowUp" : "Thanks for submitting! ",
+              "content" : "What are you (please select all appropriate options)",
+              "suggestions" : []
+       }, {
+              "intent" : "BB_PremierCo_TestBot_LinkListIntent",
+              "description" : "My link list intent",
+              "hasPII" : false,
+              "utterances" : ["linkslist", "list links", "link list"],
+              "type" : "card",
+              "subType" : "linkList",
+              "responses" : [{
+                           "name" : "<p>Go Google</p>",
+                           "url" : "http://google.com"
+                     }, {
+                           "name" : "<p>Facebook</p>",
+                           "url" : "http://facebook.com"
+                     }, {
+                           "name" : "<p>Alight</p>",
+                           "url" : "http://alight.com"
+                     }
+              ],
+              "suggestions" : []
+       }, {
+              "intent" : "BB_PremierCo_TestBot_linkListIntentTwo",
+              "description" : "Link list response",
+              "hasPII" : false,
+              "utterances" : ["link list", "linklist", "list"],
+              "type" : "card",
+              "subType" : "linkList",
+              "suggestions" : [],
+              "linkList" : [{
+                           "name" : "<p>Google</p>",
+                           "url" : "http://google.com"
+                     }, {
+                           "name" : "<p>Some random image</p>",
+                           "url" : "https://s3.us-east-2.amazonaws.com/bhawika/HIE+Responsive/get-start-6-8-17.jpg"
+                     }
+              ],
+              "responses" : [{
+                           "content" : "This line will appear above the link list"
+                     }
+              ]
+       }, {
+              "intent" : "BB_PremierCo_TestBot_optionCardIntent",
+              "description" : "Options card",
+              "hasPII" : false,
+              "utterances" : ["opt card", "optcard", "option"],
+              "type" : "card",
+              "subType" : "option",
+              "suggestions" : [],
+              "responses" : [{
+                           "content" : "<p>This is the title of the card</p>",
+                           "action1" : "Google",
+                           "action2" : "Facebook"
+                     }, {
+                           "content" : "<p><em>Card</em> <u>title</u></p>",
+                           "action1" : "Search",
+                           "action2" : "Social Network"
+                     }
+              ],
+              "actionURL1" : "http://google.com",
+              "actionURL2" : "http://facebook.com"
+       }, {
+              "intent" : "BB_PremierCo_TestBot_multiFormIntentTest",
+              "description" : "Multiple choice selection",
+              "hasPII" : false, 
+              "utterances" : ["casmcsa scasc", "cscc", "xmcwlcm"],
+              "type" : "form",
+              "subType" : "multi",
+              "responses" : [{
+                           "content" : "<p>Alight employee</p>"
+                     }, {
+                           "content" : "<p>Citizen of Earth</p>"
+                     }, {
+                           "content" : "<p>A bad programmer</p>"
+                     }
+              ],
+              "FollowUp" : "Thanks for submitting! ",
+              "content" : "What are you (please select all appropriate options)",
+              "suggestions" : []
+       }, {
+              "intent" : "BB_PremierCo_TestBot_multiFormIntentTwo",
+              "description" : "Multiple choice selection",
+              "hasPII" : false,
+              "utterances" : ["PP", "PPP", "PPPPP"],
+              "type" : "form",
+              "subType" : "multi",
+              "formOptions" : ["<p>ABC</p>", "<p>DEF</p>"],
+              "followUpMsg" : "Thanks for multi",
+              "responses" : [{
+                           "content" : "Choose one or many"
+                     }
+              ],
+              "suggestions" : []
+       }, {
+              "intent" : "BB_PremierCo_TestBot_singleSelectTest",
+              "description" : "Form with single select",
+              "hasPII" : false,
+              "utterances" : ["singleselect", "choose one", "single"],
+              "type" : "form",
+              "subType" : "single",
+              "formOptions" : ["<p>Red</p>", "<p>Green</p>", "<p>Blue</p>"],
+              "followUpMsg" : "Thank you for choosing one.",
+              "responses" : [{
+                           "content" : "Choose one of the following"
+                     }
+              ]
+       }
+]

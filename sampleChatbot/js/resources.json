@@ -1,0 +1,13 @@
+{
+    "resources": {
+        "benefitsContacts": {
+            "text": "<p>Your benefits contacts are:</p><ul><li>Contact One: +1 1800 xxx xxx</li><li>Contact Two: +1 1800 xxx xxx</li></ul><p></p>"
+        },
+        "benefitsWebsite": {
+            "text": "<p>Your benefits website is <a href=\"http://benefits.com\" target=\"_blank\">Benefits website</a></p>"
+        },
+        "res1548333025018": {
+            "text": "<p>You can find more joke from online site <a href=\"http://iteslj.org/c/jokes-short.html\" target=\"_blank\">iteslj.org</a></p>"
+        }
+    }
+}

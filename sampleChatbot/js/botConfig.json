@@ -1,0 +1,71 @@
+{
+    "metaConfig": {
+        "botName": "BB_PremierCo_TestBot",
+        "botAlias": "dsi_prod",
+        "API_URL": "https://jkd5zz0mic.execute-api.us-east-1.amazonaws.com/dsidev/request",
+        "welcomeText": "<p>Hi! My name is Kymm. How may I help you?</p>"
+    },
+    "botServiceConfig": [{
+        "name": "Show suggestion phrases",
+        "serviceCode": "enableSuggestions",
+        "valueType": "boolean",
+        "value": true
+    }, {
+        "name": "Enable voice output",
+        "serviceCode": "enableBotVoice",
+        "valueType": "boolean",
+        "value": false
+    }, {
+        "name": "Log user and bot responses",
+        "serviceCode": "enableLogging",
+        "valueType": "boolean",
+        "value": true
+    }, {
+        "name": "Current chosen voice",
+        "serviceCode": "voiceCode",
+        "valueType": "string",
+        "value": "female",
+        "class": ["conf-disabled"]
+    }],
+    "botUIConfig": [{
+        "name": "Bot response background",
+        "serviceCode": "botRespColor",
+        "valueType": "string",
+        "value": "#000000",
+        "class": ["conf-colorcode"]
+    }, {
+        "name": "User response background",
+        "serviceCode": "userRespColor",
+        "valueType": "string",
+        "value": "#cccccc",
+        "class": ["conf-colorcode"]
+    }, {
+        "name": "Conversation background",
+        "serviceCode": "conversationColor",
+        "valueType": "string",
+        "value": "#FFFFFF",
+        "class": ["conf-colorcode"]
+    }, {
+        "name": "Bot response font color",
+        "serviceCode": "botRespFontColor",
+        "valueType": "string",
+        "value": "#ffffff",
+        "class": ["conf-colorcode"]
+    }, {
+        "name": "User response font color",
+        "serviceCode": "userRespFontColor",
+        "valueType": "string",
+        "value": "#000000",
+        "class": ["conf-colorcode"]
+    }, {
+        "name": "Bot avatar",
+        "serviceCode": "botAvatar",
+        "valueType": "avatarImg",
+        "value": "avtar4"
+    }, {
+        "name": "User avatar",
+        "serviceCode": "userAvatar",
+        "valueType": "avatarImg",
+        "value": "avtar2"
+    }]
+}

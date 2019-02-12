@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0",
+    "importType": "LEX",
+    "importFormat": "JSON"
+  },
+  "resource": {
+    "name": "testBasebot",
+    "version": "1",
+    "intents": [
+      {
+        "name": "Base_flower",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "order me a flower",
+          "I would like to order a flower",
+          "would like to pick up flowers"
+        ],
+        "slots": []
+      },
+      {
+        "name": "Base_cake",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Order me a cake of a kg",
+          "can you tell the type of cakes",
+          "I would like to book cake for the party"
+        ],
+        "slots": []
+      },
+      {
+        "name": "Base_vehicle",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "would like to book a cab",
+          "Help me book a cab for my location",
+          "can I change my cab preferences"
+        ],
+        "slots": []
+      },
+      {
+        "name": "Base_trip",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "I would like book a flight",
+          "can I book a resort",
+          "can you help me in booking a travel",
+          "Can you tell me which soft drinks available"
+        ],
+        "slots": []
+      },
+      {
+        "name": "Base_drinks",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Would like to ask for the tea",
+          "can I get a menu for the coffee",
+          "Please get me a black coffee"
+        ],
+        "slots": []
+      },
+      {
+        "name": "Base_pizza",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "I want to order a pizza",
+          "Can I order a pizza please",
+          "would like to order a pizza"
+        ],
+        "slots": []
+      },
+      {
+        "name": "Base_greetings",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Hi",
+          "Hey",
+          "Hello",
+          "Great day"
+        ],
+        "slots": []
+      },
+      {
+        "name": "Base_appointment",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "I would like to book a doctor appointment",
+          "Can I get a table reserved for tonight"
+        ],
+        "slots": []
+      }
+    ],
+    "voiceId": "Joanna",
+    "childDirected": false,
+    "locale": "en-US",
+    "idleSessionTTLInSeconds": 300,
+    "clarificationPrompt": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "Sorry, can you please repeat that?"
+        }
+      ],
+      "maxAttempts": 5
+    },
+    "abortStatement": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "Sorry, I could not understand. Goodbye."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaseBot</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/botStyles.css" rel="stylesheet">
+</head>
+
+<body id="content">
+        <div class="container">
+            <div id="botList-wrapper" class="row">
+                <div id="botList-head" class="col-md-12">
+                    <div class="logo"></div>
+                    <h1 class="title">Base Bot UI</h1>
+                </div>
+                <div id="botList-container">                          
+                    <div id="botList" class="col-md-12">
+                        <div class="chat-wrapper">
+                            <div id="conversation">
+                                
+                            <span id="stick"></span>
+                             <div id="typing" class="hidden">
+                                <p class='text-center small'><em>Bot is typing...</em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="col-md-12 suggest">
+                    <div id="suggestionSelector"></div>
+                   </div>
+                        <div class="col-md-12" id="inputPanel">
+                            <div class="input-group input-group-lg" style="width: 100%;">
+                                <input placeholder="Talk away..." type="text" disabled class="form-control" id="userInput" />
+                                <button id="sendBtn" type="button"><i class="glyphicon glyphicon-send"></i></button>
+                            </div>
+                           
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript"> var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE "); if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) 
+            document.write('<script src="js/bluebird.min.js"><\/script>'); </script>
+    <script src="js/jquery-bootstrap.min.js"></script>
+    <script src="js/howler.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
